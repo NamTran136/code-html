@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        #main{
+            padding: 0 10% 10% 10%;
+            color: black;
+        }
+        :root{
+        --color: black;
+    }
+        hr{
+            border-color: var(--color);
+        }
+        #header{
+            padding: 15px 0;
+            position: relative;
+        }
+        #header .sel{
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+        h1{
+            color: var(--color);
+        }
+        #inf{
+            
+        }
+        h3{
+            margin: 15px 0px;
+            color: var(--color);
+        }
+        #info .Thong-tin{
+            padding: 10px 0;
+            position: relative;
+        }
+    #info .Thong-tin img{
+        width: 100px;
+        height: 125px;
+        display: inline-block;
+        
+    }
+    #info .Thong-tin ul{
+        display: inline-block;
+        position: absolute;
+        top: 85px;
+        left: 150px;
+    }
+    #edu{
+        
+    }
+    #content .Thong-tin .list{
+        margin: 10px 40px;
+    }
+    #project{
+        
+    } 
+    .pj{
+        background-color: beige;
+        padding: 36px 36px;
+        width: 30%;margin-left: 12px;
+        margin-right: 12px;
+        display: inline-block;text-align: center;
+    }
+    .pj .heading{
+        width: 100%;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Tran Hai Nam</h1>
+           <div class="sel">Change theme:
+            <select name="Change theme:" id="colorTheme" onfocus="changeTheme(this)" onchange="changeThemee(this)">
+                <option value="black">Defaul</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="pink">Pink</option>
+                <option value="gray">Gray</option></select>
+           </div>
+          
+        </div>
+        
+        
+        <div id="info">
+            <h3>Personal Information</h3>
+            <hr>
+            <div class="Thong-tin">
+                <img src="https://i.pinimg.com/originals/0c/a2/42/0ca242e4025686518511705fa46e0db0.jpg" alt="">
+                <ul >
+                    <li>Number: xxxxxxxxxxx</li>
+                    <li>Email: abc123@gmail.com</li>
+                    <li>Location: Hai Duong</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div id="content">
+            <h3>Education</h3>
+            <hr>
+            <div class="Thong-tin">
+                <ul class="list">
+                    <li>Hanoi University of Industry</li>
+                    <li>Hanoi University of Industry</li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <h3>Skill</h3>
+            <hr>
+            <div class="Thong-tin">
+                <ol class="list">
+                    <li>html/css</li>
+                    <li>Javascript</li>
+                </ol>
+            </div>
+        </div>
+        <div id="project">
+            <h3>Project</h3>
+            <hr>
+                <div class="pj"><a class="heading" href="">Project1</a><ul>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                </ul></div>
+                <div class="pj">
+                    <a class="heading" href="">Project1</a><ul>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                </ul></div>
+                <div class="pj"><a class="heading" href="">Project1</a><ul>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                    <li>xxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                </ul>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

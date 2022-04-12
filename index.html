@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Tách style thành file css thay vì để style trực tiếp ở trang index -->
     <style>
         *{
             padding: 0;
@@ -51,24 +52,28 @@
             padding: 10px 0;
             position: relative;
         }
+    /* Không được đặt tên Tiếng Việt cho biến, tất cả các biến phải đặt tên tiếng Anh và không được viết hoa  */
     #info .Thong-tin img{
         width: 100px;
         height: 125px;
         display: inline-block;
         
     }
+    /* Không được đặt tên Tiếng Việt cho biến, tất cả các biến phải đặt tên tiếng Anh và không được viết hoa  */
     #info .Thong-tin ul{
         display: inline-block;
         position: absolute;
         top: 85px;
         left: 150px;
     }
+    /* Nếu thừa class không cần style thì xóa đi */
     #edu{
         
     }
     #content .Thong-tin .list{
         margin: 10px 40px;
     }
+    /* Nếu thừa class không cần style thì xóa đi */
     #project{
         
     } 
@@ -88,6 +93,7 @@
 
 
     </style>
+    <!-- Nên tách thành 1 file js riêng rồi import vào file index thay vì viết trực tiếp -->
     <script type="text/javascript">
 
         function changeFunc() {
@@ -109,6 +115,7 @@
 <body>
     <div id="main">
         <div id="header">
+            <!-- Không được đặt tên class là chữ hoa,tất cả các class phải viết thường -->
             <h1 class="COLOR">Tran Hai Nam</h1>
            <div class="sel">Change theme:
             
@@ -126,6 +133,7 @@
         
         
         <div id="info">
+            <!-- Không được đặt tên class là chữ hoa,tất cả các class phải viết thường -->
             <h3 class="COLOR">Personal Information</h3>
             <hr >
             <div class="Thong-tin">

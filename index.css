@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: aquamarine;color: black;
+}
+#main{
+    padding: 40px 10%;
+    
+    width: 100%;
+}
+hr{
+    border-color: black;
+    margin: 20px 0;
+}
+.clear{
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding: 0 8px;
+}
+.col-third{
+    width: calc(100% / 3);
+}
+#header{
+    position: relative;
+    margin-top:  16px;
+}
+#header .sel{
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.content{
+    margin: 24px 0;
+    width: 100%;
+    display: block;
+}
+.content ul,ol{
+    display: inline-block;
+}
+.content .about-content{
+    margin: 0px 32px;
+}
+figure {
+    position: relative;
+    width: 130px;
+    height: 150px;
+    display: inline-block;
+  }
+   
+  figure:before,
+  figure:after {
+    content: '';
+    height: auto;
+    width: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+   
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .info{
+    margin: 0 40px;
+  }
+  .project{
+      text-align: center;
+  }
+  .project .project-items{
+    margin: 0px 8px;
+    background-color: aliceblue;
+    padding: 32px;
+    word-break: break-word;
+  }
+  .project-heading {
+    display: block;
+}
+
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .project{
+        width: 50%;
+        padding: 16px 0px;
+    }
+}
+/* Mobile */
+@media (max-width: 740px){
+    .project{
+        width: 100%;
+        padding: 16px 0px;
+    }
+    
+    #header .sel {
+        position: relative;
+    } 
+    figure{
+        display: block;
+        margin-bottom: 20px;
+    }
+}
